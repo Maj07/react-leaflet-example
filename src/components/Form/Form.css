@@ -1,0 +1,86 @@
+.form__container {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  top: 0;
+  right: -100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.form__container--active {
+  right: 0;
+}
+
+.form__description__container {
+  padding: 1rem;
+}
+
+.form__header {
+  padding: 1rem 0.5rem;
+  background-color: #3c8fce;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.form__header__close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.button__container {
+  display: flex;
+}
+
+.form__button {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #f9b29c;
+  border-radius: 0.5rem;
+  appearance: none;
+  border: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.formGroup {
+  padding: 1rem;
+}
+
+.formGroupInput {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+input {
+  height: 2rem;
+}
+
+.errors {
+  margin-top: 1rem;
+  color: #c41c1c;
+}
+
+@media only screen and (min-width: 768px) {
+  .form__container {
+    top: auto;
+    width: 33%;
+  }
+}
